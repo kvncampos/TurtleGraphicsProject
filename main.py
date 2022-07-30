@@ -59,6 +59,7 @@ def draw_dash(space, x):
 
 
 def random_color():
+    """Generate Random RGB Colors"""
     r = random.randint(0, 255)
     g = random.randint(0, 255)
     b = random.randint(0, 255)
@@ -88,13 +89,14 @@ def random_walk(distance):
     t.hideturtle()
 
 
-def random_circle(size_of_cicle):
+def random_circle(size_of_circle):
+    """Generate a random circle, add the size of circle you want"""
     t.width(2)
     t.speed("fastest")
     for x in range(38):
         t.color(random_color())
         t.pencolor(random_color())
-        t.circle(size_of_cicle)
+        t.circle(size_of_circle)
         t.setheading(x * 10)
     t.hideturtle()
 
